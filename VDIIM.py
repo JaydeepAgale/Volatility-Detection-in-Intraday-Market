@@ -17,8 +17,11 @@ def load_and_process_data():
     percentile_threshold = df["rolling_vol_15"].quantile(0.95)
     df["vol_spike"] = df["rolling_vol_15"] > percentile_threshold
 
+<<<<<<< HEAD
     df["range"] = df["high"] - df["low"]
 
+=======
+>>>>>>> 238ff32b85253a91caabb9c4024076f1d6276d68
     df.dropna(inplace=True)
 
     # DAILY SUMMARY
