@@ -527,8 +527,8 @@ function App() {
           borderRadius : "10px"
         }}>
           {(() => {
-            const high = getStats(rangeData.high_vol);
-            const normal = getStats(rangeData.normal_vol);
+            // const high = getStats(rangeData.high_vol);
+            // const normal = getStats(rangeData.normal_vol);
 
             return (
               <ResponsiveContainer width = "100%" height = {300}>
