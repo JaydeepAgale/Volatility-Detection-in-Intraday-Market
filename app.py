@@ -8,7 +8,7 @@ st.title("📊 Nifty Volatility Analysis")
 
 # Load the data using your existing function
 try:
-    df, daily_df = load_and_process_data()
+    df, daily_df, hypothesis_result = load_and_process_data()
     
     st.subheader("Current Market Volatility (Intraday)")
     st.line_chart(df['rolling_vol_15'].tail(100))

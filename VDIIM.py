@@ -57,10 +57,10 @@ def load_and_process_data():
     t_stat, p_value = ttest_ind(high_vol, normal_vol, equal_var=False)
 
     hypothesis_result = {
-        "t_stat" : float(t_stat),
-        "p_value" : float(p_value),
-        "high_vol_mean_range" : float(high_vol.mean()),
-        "normal_vol_mean_range" : float(normal_vol.mean()),
+        "t_stat": float(t_stat),
+        "p_value": float(p_value),
+        "high_vol_mean_range": float(high_vol.mean()),
+        "normal_vol_mean_range": float(normal_vol.mean()),
     }
 
     return df, daily, hypothesis_result
